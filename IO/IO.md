@@ -54,7 +54,86 @@ int close(int fd);
 off_t lseek(int fd, off_t offset, int whence);
 ```
 
-> 
+> 函数 read
+
+打开文件中读数据
+
+```c
+#include <unistd.h>
+
+ssize_t read(int fd, void *buf, size_t nbytes);
+```
+
+> 函数 write
+
+向打开文件写数据。
+
+```c
+#include <unistd.h>
+
+ssize_t write(int fd, const void *buf, size_t nbytes);
+```
+
+## 原子操作
+
+```c
+#include <unistd.h>
+
+ssize_t pread(int fd, void *buf, size_t nbytes, off_t offset);
+
+ssize_t pwrite(int fd, const void *buf, size_t nbytes, off_t offset); 
+```
+
+调用 pread 相当于调用 lseek 后调用 read；调用 pwrite 相当于调用 lseek 后调用 write。
+
+原子操作指的是由多步组成的一个操作。如果该操作原子地执行，则要么执行完所有步骤，要么一步也不执行，不可能只执行所有步骤的一个子集。
+
+## 函数 dup 和 dup2
+
+都可以用来复制一个现有的文件描述符。
+
+```c
+#include <unistd.h>
+
+int dup(int fd);
+int dup2(int fd, int fd2);
+```
+
+## 函数 sync、fsync 和 fdatasync
+
+```c
+#include <unistd.h>
+
+// 只对由文件描述符 fd 指定的一个文件起作用，并且等待写磁盘操作结束才返回
+int fsync(int fd);
+
+// 类似 fsync
+int fdatasync(int fd); 
+
+// 将所有修改过的块缓冲区排入写队列
+void sync(void);
+```
+## 函数 fcntl
+
+可以改变已经打开文件的属性。
+
+```c
+#include <fcntl.h>
+
+int fcntl(int fd, int cmd, .../* int arg */);
+```
+
+## 函数 ioctl
+
+```c
+#include <unistd.h>
+
+#include <sys/ioctl.h>
+
+int ioctl(int fd, int request,...);
+```
+
+
 
 
 
