@@ -143,6 +143,10 @@ int fcntl(int fd, int cmd, .../* int arg */);
 int ioctl(int fd, int request,...);
 ```
 
+## 第 3 章 文件 I/O 总结
+
+本章主要介绍不带缓冲 I/O，如打开文件、读文件、写文件等。
+
 
 
 
