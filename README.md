@@ -7,9 +7,9 @@
 * [高级 I/O](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Advanced%20IO)
 * [终端 I/O](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Terminal%20IO)
 
-## 进程 (APUE：7-10, 13)
+## 进程 (APUE：7-10, 13, 15, 17)
 
-## 线程 (APUE：11-12, 15, 17)
+## 线程 (APUE：11-12)
 
 ## 网络 IPC：套接字 (APUE：16)
 
