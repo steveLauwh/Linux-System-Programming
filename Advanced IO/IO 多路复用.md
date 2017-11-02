@@ -53,7 +53,7 @@ int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struc
 
 在连接数少并且连接都十分活跃的情况。
 
-### select 实现服务端和客户端通信
+### [select 实现服务端和客户端通信](https://github.com/steveLauwh/Linux-System-Programming/tree/master/APUE_Code/IO%20Multiplexing/select)
 
 
 ## poll
@@ -92,7 +92,7 @@ int poll(struct pollfd *fds, nfds_t nfds, int timeout);
 
 与 select 一样，适合连接数少的情况，当随着监视的描述符 fd 数量增长，其效率也会线性下降。
 
-### poll 实现服务端和客户端通信
+### [poll 实现服务端和客户端通信](https://github.com/steveLauwh/Linux-System-Programming/tree/master/APUE_Code/IO%20Multiplexing/poll)
 
 
 ## epoll
@@ -147,7 +147,8 @@ ET 模式的效率比 LT 模式高。
 
 适合大量并发连接。
 
-### epoll 实现服务端和客户端通信
+### [epoll 实现服务端和客户端通信](https://github.com/steveLauwh/Linux-System-Programming/tree/master/APUE_Code/IO%20Multiplexing/epoll)
+
 
 ## 参考
 
