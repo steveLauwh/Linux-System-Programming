@@ -133,3 +133,6 @@ int fscanf(FILE *stream, const char *format, ...);
 int sscanf(const char *str, const char *format, ...);
 ```
 
+## 参考
+
+* [C语言详解 FILE文件操作](http://blog.csdn.net/yong_sun/article/details/8921061)
