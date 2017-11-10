@@ -10,6 +10,9 @@
 ## 进程 (APUE：7-10, 13, 15, 17)
 
 * [进程环境](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Environment)
+* [进程控制](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Control)
+* [进程关系](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Relationship)
+* [信号](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Signal)
 
 
 ## 线程 (APUE：11-12)
