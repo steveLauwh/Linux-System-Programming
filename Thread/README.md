@@ -130,5 +130,37 @@ pthread_mutex_unlock(&qlock); /*unlock*/
 
 信号量可以实现线程的同步和互斥。
 
+> **自旋锁**
 
+自旋锁是专为防止多处理器并发（实现保护共享资源）而引入的一种锁机制。
 
+自旋锁不会引起调用者睡眠，如果自旋锁已经被别的执行单元保持，调用者就一直循环在那里看是否该自旋锁的保持者已经释放了锁，“自旋”一词就是因此而得名。
+
+自旋锁只有在内核可抢占或 SMP（多处理器）的情况下才真正需要，在单 CPU 且不可抢占的内核下，自旋锁的所有操作都是空操作。
+
+自旋锁不应该被持有时间过长。
+
+自旋锁的缺点：
+
+* 死锁：试图递归地获得自旋锁必然会引起死锁
+* 过多占有 CPU 资源
+
+```c
+#include <pthread.h>
+
+// 循环等待直到自旋锁解锁（置为1），然后将自旋锁锁上（置为0）
+int pthread_spin_lock(pthread_spinlock_t *lock);   
+
+int pthread_spin_trylock(pthread_spinlock_t *lock);
+  
+int pthread_spin_unlock(pthread_spinlock_t *lock);	 // 将自旋锁解锁（置为1）
+```
+
+### 死锁
+
+死锁：两个线程试图同时占用两个资源，并按不同的次序锁定相应的共享资源。
+
+避免死锁方法：
+
+* 按相同的次序锁定相应的共享资源
+* 使用 pthread_mutex_trylock()，它是 pthread_mutex_lock() 函数的非阻塞版
