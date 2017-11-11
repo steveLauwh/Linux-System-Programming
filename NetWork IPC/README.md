@@ -1,5 +1,8 @@
 ## 网络进程间通信(socket)
 
+[网络基础知识](https://github.com/steveLauwh/Linux-System-Programming/blob/master/NetWork%20IPC/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+
+---
 不同计算机(通过网络相连)上的进程相互通信的机制。
 
 socket - create an endpoint for communication
