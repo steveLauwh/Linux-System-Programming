@@ -7,13 +7,14 @@
 * [高级 I/O](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Advanced%20IO)
 * [终端 I/O](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Terminal%20IO)
 
-## 进程 (APUE：7-10, 13, 15, 17)
+## 进程 (APUE：7-10, 13, 15)
 
 * [进程环境](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Environment)
 * [进程控制](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Control)
 * [进程关系](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Process%20Relationship)
 * [信号](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Signal)
-
+* [守护进程](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Daemon%20Process)
+* [进程间通信](https://github.com/steveLauwh/Linux-System-Programming/tree/master/Inter%20Process%20Communication)
 
 ## 线程 (APUE：11-12)
 
