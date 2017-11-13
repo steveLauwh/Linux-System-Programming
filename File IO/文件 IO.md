@@ -61,8 +61,12 @@ int close(int fd);
 ```c
 #include <unistd.h>
 
+// fd：己打开文件的文件描述符, offset：位移量, whence：定位的位置
 off_t lseek(int fd, off_t offset, int whence);
 ```
+* SEEK_SET：将该文件的位移量设置为文件开始处 offset 个字节处，offset 为正
+* SEEK_CUR：将该文件的位移量设置为当前值加 offset，offset 可正可负
+* SEEK_END：将该文件的位移量设置为文件长度加 offset，offset 可正可负。当 offset 为正时，表示在定位到文件末尾再加 offset 字节处，其中会出现一些“空洞”，这种文件也叫“空洞”文件
 
 > 函数 read
 
