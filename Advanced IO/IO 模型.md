@@ -61,4 +61,5 @@ I/O 多路复用模型是建立在内核提供的多路分离函数 select 基�
 
 * [高性能 IO 模型浅析](http://www.cnblogs.com/fanzhidongyzby/p/4098546.html)
 * [浅谈 Linux 下的五种 I/O 模型](http://www.cnblogs.com/chy2055/p/5220793.html)
+* [五种 IO 模型](http://www.cnblogs.com/5iedu/p/6341332.html)
 * [服务器基础:聊聊 c10k 问题及解决方法](http://blog.csdn.net/sinat_34990639/article/details/52779154)
