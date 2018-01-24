@@ -28,6 +28,7 @@
 ## 参考
 
 * Source Code：http://www.apuebook.com
+* [网页版 - Linux Programmer's Manual](http://man7.org/linux/man-pages/man3/)
 * 《Unix 环境高级编程》(第3版)
 * 《Linux/Unix 系统编程手册》
 * 《Unix/Linux编程实践教程》
